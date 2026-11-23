@@ -1,0 +1,14 @@
+# Paths from the current single-page site and common aliases.
+/about            /about-contact/          301
+/about/           /about-contact/          301
+/about-us         /about-contact/          301
+/contact          /about-contact/#contact  301
+/contact/         /about-contact/#contact  301
+/contact-us       /about-contact/#contact  301
+/projects         /#projects               301
+/projects/        /#projects               301
+/reviews          /about-contact/          301
+/privacy-policy   /privacy/                301
+/privacy-policy/  /privacy/                301
+/quote            /request-a-quote/        301
+/request-information /request-a-quote/     301

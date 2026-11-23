@@ -1,0 +1,5 @@
+# Preview build: not for indexing. Set SITE_INDEXABLE=1 on the real domain.
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.southernstarplumbinginc.com/sitemap.xml

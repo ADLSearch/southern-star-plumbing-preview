@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Southern Star Plumbing</title>
+  <rect width="64" height="64" rx="10" fill="#0F2E48"/>
+  <rect x="3" y="3" width="58" height="58" rx="8" fill="none" stroke="#C42A22" stroke-width="4"/>
+  <path d="M32.0 6.0L37.9 20.9L53.9 21.9L41.5 32.1L45.5 47.6L32.0 39.0L18.5 47.6L22.5 32.1L10.1 21.9L26.1 20.9Z" fill="#ffffff"/>
+  <path d="M32 21.5C32 21.5 27.2 27 27.2 30.4a4.8 4.8 0 0 0 9.6 0C36.8 27 32 21.5 32 21.5Z" fill="#0F2E48" transform="translate(0 1.5)"/>
+  <rect x="12" y="52" width="40" height="5" rx="2.5" fill="#C42A22"/>
+</svg>
