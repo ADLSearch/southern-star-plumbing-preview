@@ -293,8 +293,11 @@ h3,.h3{font-size:clamp(18px,2vw,22px);line-height:1.3;letter-spacing:-.02em;font
 .nap strong{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-family:var(--mono);color:var(--muted);font-weight:500}
 
 @media (max-width:980px){
-  .hero-grid,.two-col,.why-grid,.svc-grid,.steps{grid-template-columns:1fr 1fr}
+  .hero-grid,.two-col,.why-grid,.why-split-grid,.svc-grid,.steps{grid-template-columns:1fr 1fr}
+  .why-split-grid{gap:28px}
   .gallery,.area-grid{grid-template-columns:1fr 1fr}
+  .gallery .shot-featured{grid-column:1 / -1;grid-row:auto}
+  .gallery .shot-featured img{min-height:280px}
   .footer-grid{grid-template-columns:1fr 1fr}
   .main-nav,.header-cta .header-phone{display:none}
   .menu-toggle{display:block}
@@ -302,10 +305,15 @@ h3,.h3{font-size:clamp(18px,2vw,22px);line-height:1.3;letter-spacing:-.02em;font
 @media (max-width:640px){
   .wrap{width:min(var(--wrap),calc(100% - 28px))}
   .hero{padding:48px 0 56px}
-  .hero-grid,.two-col,.why-grid,.svc-grid,.steps,.gallery,.area-grid,.footer-grid{grid-template-columns:1fr}
+  .hero-photo{padding:56px 0 64px;min-height:0}
+  .hero-grid,.two-col,.why-grid,.why-split-grid,.svc-grid,.steps,.gallery,.area-grid,.footer-grid{grid-template-columns:1fr}
+  .gallery .shot-featured{grid-column:auto;grid-row:auto}
+  .gallery .shot-featured img{min-height:220px}
   .section{padding:64px 0}
   .header-cta .btn-sm{padding:8px 12px}
   .shot img{height:200px}
+  .why-photo img{min-height:260px;max-height:360px}
+  .cta-band-photo{padding:72px 0}
 }
 
 @media (max-width:640px){
@@ -314,3 +322,144 @@ h3,.h3{font-size:clamp(18px,2vw,22px);line-height:1.3;letter-spacing:-.02em;font
   .header-cta .cta-short{display:inline}
 }
 .cta-short{display:none}
+
+
+/* ---- Visual refresh (homepage photography, Framer-like energy) ---- */
+.hero-photo{
+  padding:88px 0 96px;
+  min-height:640px;
+  isolation:isolate;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+}
+.hero-bg img{
+  width:100%;height:100%;object-fit:cover;object-position:center 42%;
+}
+.hero-overlay{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(8,24,37,.90) 0%,rgba(8,24,37,.78) 42%,rgba(8,24,37,.62) 72%,rgba(8,24,37,.55) 100%),
+    linear-gradient(180deg,rgba(8,24,37,.22) 0%,rgba(8,24,37,.48) 100%);
+}
+.hero-grain{
+  position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.22;
+  background-image:url("/assets/img/grain.webp");
+  background-size:160px 160px;
+  mix-blend-mode:overlay;
+}
+.hero-motif{
+  position:absolute;left:-48px;bottom:-56px;width:300px;height:300px;
+  color:rgba(232,176,26,.14);z-index:2;pointer-events:none;
+}
+.hero-motif .star-mark{width:100%;height:100%}
+.hero-photo .hero-grid{z-index:3}
+.hero-photo .quote-card{position:relative;z-index:3}
+.hero-photo .hero-grid > .reveal:nth-child(2){animation-delay:.12s}
+
+/* Why choose us — large photo + points, no invented stats */
+.why-split-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+}
+.why-photo{
+  margin:0;border-radius:20px;overflow:hidden;position:relative;
+  box-shadow:var(--shadow-lg);background:var(--navy);
+}
+.why-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:30% center;
+  min-height:440px;max-height:560px;
+  transition:transform .6s ease;
+}
+.why-photo:hover img{transform:scale(1.04)}
+.why-photo figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:10px 14px;font-size:12px;color:rgba(247,241,230,.92);
+  background:linear-gradient(transparent,rgba(8,24,37,.72));
+}
+.why-copy .sec-head{margin-bottom:24px}
+.why-points{display:grid;gap:16px}
+.why-point{
+  display:flex;gap:16px;align-items:flex-start;
+  background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 18px 16px;
+}
+.why-point .ico-wrap{margin:0;flex:none;background:rgba(196,42,34,.1);color:var(--red)}
+.why-point h3{margin:2px 0 6px}
+.why-point p{margin:0;color:var(--muted)}
+.stock-note{margin-top:28px}
+
+/* Image-backed service cards */
+.svc-card-photo{padding:0;overflow:hidden}
+.svc-card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--navy)}
+.svc-card-media img{
+  width:100%;height:100%;object-fit:cover;transition:transform .5s ease;
+}
+.svc-card-photo:hover .svc-card-media img{transform:scale(1.06)}
+.svc-card-media .ico-wrap{
+  position:absolute;left:14px;bottom:14px;margin:0;
+  background:var(--gold);color:var(--navy-deep);
+  box-shadow:0 8px 20px rgba(8,24,37,.28);
+}
+.svc-card-body{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+.svc-card-photo .svc-card-body p{margin:0 0 12px}
+
+/* Gallery / project strip */
+.gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:16px}
+.gallery .shot-featured{grid-column:1;grid-row:1 / span 2}
+.gallery .shot-featured img{height:100%;min-height:460px}
+.shot{position:relative}
+.shot img{transition:transform .5s ease}
+.shot:hover img{transform:scale(1.05)}
+
+/* Photographic CTA band */
+.cta-band-photo{
+  position:relative;overflow:hidden;isolation:isolate;padding:96px 0;
+  text-align:center;
+}
+.cta-band-bg{position:absolute;inset:0;z-index:0}
+.cta-band-bg img{width:100%;height:100%;object-fit:cover;object-position:center 45%}
+.cta-band-overlay{
+  position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:
+    linear-gradient(180deg,rgba(8,24,37,.78),rgba(8,24,37,.88)),
+    linear-gradient(90deg,rgba(8,24,37,.35),transparent 40%,transparent 60%,rgba(8,24,37,.35));
+}
+.cta-band-photo::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.18;
+  background-image:url("/assets/img/grain.webp");
+  background-size:160px 160px;
+  mix-blend-mode:overlay;
+}
+.cta-band-motif{
+  position:absolute;right:-40px;top:-40px;width:260px;height:260px;
+  color:rgba(232,176,26,.12);z-index:2;pointer-events:none;
+}
+.cta-band-motif .star-mark{width:100%;height:100%}
+.cta-band-inner{position:relative;z-index:3}
+
+@media (prefers-reduced-motion:reduce){
+  .why-photo:hover img,
+  .svc-card-photo:hover .svc-card-media img,
+  .shot:hover img{transform:none}
+}
+
+.star-mark{display:block}
+
+/* Contrast: muted ink must not sit on dark hero/CTA */
+.hero .micro, .hero .micro a{
+  color:rgba(247,241,230,.88);
+}
+.hero .micro a, .cta-band .micro a{color:var(--gold)}
+.hero .micro a:hover, .cta-band .micro a:hover{color:var(--white)}
+
+.svc-card .more, .svc-card-body .more{
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+}
+
+.gallery .shot-featured{display:flex;flex-direction:column;position:relative}
+.gallery .shot-featured img{flex:1 1 auto;height:100%;min-height:460px;object-fit:cover}
+.gallery .shot-featured figcaption{
+  position:absolute;left:0;right:0;bottom:0;margin:0;
+  background:linear-gradient(transparent,rgba(8,24,37,.8));
+  padding:28px 14px 14px;
+}
