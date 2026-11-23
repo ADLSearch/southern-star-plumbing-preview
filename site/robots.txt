@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://www.southernstarplumbinginc.com/sitemap.xml
+Sitemap: https://web-production-024378ba.up.railway.app/sitemap.xml

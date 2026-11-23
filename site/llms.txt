@@ -28,25 +28,25 @@ Southern Star Plumbing, Inc. is a Florida Registered Plumbing Contractor based i
 - Nationwide work is inquiry-only and only where licensing allows. A Florida registration does not authorize work in every state.
 
 ## Pages
-- Home (Molino, FL plumbing contractor): https://www.southernstarplumbinginc.com/
-- Plumbing services hub: https://www.southernstarplumbinginc.com/services/
-- Request a quote / discuss a project: https://www.southernstarplumbinginc.com/request-a-quote/
-- How a project starts: https://www.southernstarplumbinginc.com/how-it-works/
-- Service areas hub (Northwest Florida): https://www.southernstarplumbinginc.com/service-areas/
-- Service: new construction plumbing: https://www.southernstarplumbinginc.com/services/new-construction-plumbing/
-- Service: water heater work: https://www.southernstarplumbinginc.com/services/water-heater-work/
-- Service: fixtures and piping: https://www.southernstarplumbinginc.com/services/fixtures-and-piping/
-- Service: gas piping: https://www.southernstarplumbinginc.com/services/gas-piping/
-- Service: renovations and improvements: https://www.southernstarplumbinginc.com/services/renovations-and-improvements/
-- Service: contractor coordination: https://www.southernstarplumbinginc.com/services/contractor-coordination/
-- Service area: Molino: https://www.southernstarplumbinginc.com/service-areas/molino/
-- Service area: Pensacola: https://www.southernstarplumbinginc.com/service-areas/pensacola/
-- Service area: Cantonment: https://www.southernstarplumbinginc.com/service-areas/cantonment/
-- Service area: Gonzalez: https://www.southernstarplumbinginc.com/service-areas/gonzalez/
-- Service area: Century: https://www.southernstarplumbinginc.com/service-areas/century/
-- Service area: Pace: https://www.southernstarplumbinginc.com/service-areas/pace/
-- Service area: Milton: https://www.southernstarplumbinginc.com/service-areas/milton/
-- Service area: Gulf Breeze: https://www.southernstarplumbinginc.com/service-areas/gulf-breeze/
-- About and contact (NAP, license, form): https://www.southernstarplumbinginc.com/about-contact/
-- FAQ: https://www.southernstarplumbinginc.com/faq/
-- Privacy policy: https://www.southernstarplumbinginc.com/privacy/
+- Home (Molino, FL plumbing contractor): https://web-production-024378ba.up.railway.app/
+- Plumbing services hub: https://web-production-024378ba.up.railway.app/services/
+- Request a quote / discuss a project: https://web-production-024378ba.up.railway.app/request-a-quote/
+- How a project starts: https://web-production-024378ba.up.railway.app/how-it-works/
+- Service areas hub (Northwest Florida): https://web-production-024378ba.up.railway.app/service-areas/
+- Service: new construction plumbing: https://web-production-024378ba.up.railway.app/services/new-construction-plumbing/
+- Service: water heater work: https://web-production-024378ba.up.railway.app/services/water-heater-work/
+- Service: fixtures and piping: https://web-production-024378ba.up.railway.app/services/fixtures-and-piping/
+- Service: gas piping: https://web-production-024378ba.up.railway.app/services/gas-piping/
+- Service: renovations and improvements: https://web-production-024378ba.up.railway.app/services/renovations-and-improvements/
+- Service: contractor coordination: https://web-production-024378ba.up.railway.app/services/contractor-coordination/
+- Service area: Molino: https://web-production-024378ba.up.railway.app/service-areas/molino/
+- Service area: Pensacola: https://web-production-024378ba.up.railway.app/service-areas/pensacola/
+- Service area: Cantonment: https://web-production-024378ba.up.railway.app/service-areas/cantonment/
+- Service area: Gonzalez: https://web-production-024378ba.up.railway.app/service-areas/gonzalez/
+- Service area: Century: https://web-production-024378ba.up.railway.app/service-areas/century/
+- Service area: Pace: https://web-production-024378ba.up.railway.app/service-areas/pace/
+- Service area: Milton: https://web-production-024378ba.up.railway.app/service-areas/milton/
+- Service area: Gulf Breeze: https://web-production-024378ba.up.railway.app/service-areas/gulf-breeze/
+- About and contact (NAP, license, form): https://web-production-024378ba.up.railway.app/about-contact/
+- FAQ: https://web-production-024378ba.up.railway.app/faq/
+- Privacy policy: https://web-production-024378ba.up.railway.app/privacy/
